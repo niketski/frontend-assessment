@@ -13,9 +13,8 @@ import CardList from '../../containers/cardList/CardList';
 const Exercise1 = () => {
 
     return (
-        <React.Fragment>
-
-            <section className="section-banner">
+        <div className="page-exercise-1">
+            <section className="page-exercise-1__section-banner">
                 <Banner 
                     imageUrlDesktop={bannerImageDesktop}
                     imageUrlMobile={bannerImageMobile}
@@ -24,15 +23,14 @@ const Exercise1 = () => {
                     subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit"/>
             </section>
 
-            <section className="section-cards">
+            <section className="page-exercise-1__section-cards">
                 <div className="container">
                     <div className="section-cards__cards-wrapper">
                         <CardList />
                     </div>
                 </div>
             </section>
-
-        </React.Fragment>
+        </div>
     );
 };
 

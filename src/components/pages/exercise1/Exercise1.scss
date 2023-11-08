@@ -1,25 +1,29 @@
-.section-cards {
-    padding: 20px 0;
-
-    &__cards-wrapper {
-
-        @include media-breakpoint-up(xl) {
-            padding: 0 110px;
+.page-exercise-1 {
+    
+    &__section-cards {
+        padding: 20px 0;
+    
+        &__cards-wrapper {
+    
+            @include media-breakpoint-up(xl) {
+                padding: 0 110px;
+            }
+            
         }
+    
+            &__card-item {
+                padding: 20px;
+    
+                @include media-breakpoint-down(sm) {
+                    padding-left: 25px;
+                    padding-right: 25px;
+                }
+            }
+    
         
+            &__card {
+                height: 100%;   
+            }                
     }
 
-        &__card-item {
-            padding: 20px;
-
-            @include media-breakpoint-down(sm) {
-                padding-left: 25px;
-                padding-right: 25px;
-            }
-        }
-
-    
-        &__card {
-            height: 100%;   
-        }                
 }

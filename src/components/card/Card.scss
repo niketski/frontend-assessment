@@ -19,8 +19,12 @@
         &__card-text {
             padding: 0 5px;
             
+            p {
+                margin: 0;
+            }
+
             @media (min-width: 768px) {
-                min-height: 170px;
+                // min-height: 170px;
             }
         }
 
