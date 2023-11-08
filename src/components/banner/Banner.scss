@@ -1,0 +1,49 @@
+.component-banner {
+    display: block;
+    position: relative;
+
+    &__image-canvas {
+
+        &::after {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #000;
+            opacity: .20;
+        }
+
+        canvas {
+            min-height: 375px;
+        }
+    }
+
+    &__content {
+        text-align: center;
+        position: absolute;
+        width: 100%;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        z-index: 5;
+        color: #fff;
+
+        h1 {
+            font-weight: 600;
+        }
+
+        p {
+
+            font-size: 1.5rem;
+            font-weight: 400;
+
+            @media (min-width: 992px) {
+                font-size: 2rem;
+                font-weight: 400;
+            }
+        }
+    }
+}

@@ -1,10 +1,16 @@
 import React from 'react';
-import './App.scss';
-
+// import './App.scss';
+import MainRoutes from './mainRoutes';
+import { Link } from 'react-router-dom';
+ 
 const App = () => {
 
     return (
-        <h1>My App</h1>
+        <React.Fragment>
+            <main>
+                <MainRoutes/>
+            </main>
+        </React.Fragment>
     );
 
 };

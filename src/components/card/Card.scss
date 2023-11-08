@@ -1,0 +1,20 @@
+.component-card {
+    padding: 20px;
+    border: 1px solid #ebebeb;
+
+    &__card-image {
+        overflow: hidden;
+    }
+
+    &__card-text {
+        padding: 0 5px;
+        
+        @media (min-width: 768px) {
+            min-height: 170px;
+        }
+    }
+
+    &__card-cta {
+        text-align: center;
+    }
+}
