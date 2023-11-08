@@ -1,5 +1,5 @@
 import React from 'react';
-import './Exercise1.scss';
+// import './Exercise1.scss';
 
 // assets
 import bannerImageDesktop from '../../../images/banner-image.jpg';
@@ -10,6 +10,7 @@ import Banner from '../../banner/Banner';
 import Card from '../../card/Card';
 
 const Exercise1 = () => {
+    
     return (
         <React.Fragment>
 

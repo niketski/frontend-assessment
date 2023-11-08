@@ -1,46 +1,25 @@
 .section-cards {
-    padding: 10px 0;
+    padding: 20px 0;
 
-    // &__cards-wrapper {
+    &__cards-wrapper {
 
-    //     @include media-breakpoint-up(lg) {
-    //         padding: 0 110px;
-    //     }
+        @include media-breakpoint-up(xl) {
+            padding: 0 110px;
+        }
         
-    // }
+    }
 
-        &__cards-wrapper > &__cards-list {
-            // display: flex;
-            // flex-wrap: wrap;
+        &__card-item {
+            padding: 20px;
 
-            @media (min-width: 768px) {
-                // margin-left: -20px;
-                // margin-right: -20px;
+            @include media-breakpoint-down(sm) {
+                padding-left: 25px;
+                padding-right: 25px;
             }
-            
         }
 
-            &__card-item {
-                // width: calc(100% / 3);
-                // padding: 20px;
-            }
-
-            &__cards-list > &__card-item {
-                // padding-left: 0;
-                // padding-right: 0;
-
-                @media (min-width: 768px) {
-                    padding: 20px;
-                }
-
-            }
-
-                &__card {
-                    height: 100%;
-                    margin-bottom: 40px;
-
-                    @media (min-width: 481px) {
-                        padding: 0;
-                    }
-                }
+    
+        &__card {
+            height: 100%;   
+        }                
 }
