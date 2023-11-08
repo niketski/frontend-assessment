@@ -1,5 +1,5 @@
 import React from 'react';
-import './ImageCanvas.scss';
+// import './ImageCanvas.scss';
 import imagePlaceholder from '../../images/placeholder.jpg';
 
 const ImageCanvas = props => {

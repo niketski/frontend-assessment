@@ -1,8 +1,7 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 // assets
-import imagePlaceholder from '../../images/content-image.jpg';
+import imagePlaceholder from '../../images/placeholder.jpg';
 
 // reused components
 import ImageCanvas from '../imageCanvas/ImageCanvas';

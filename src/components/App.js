@@ -1,5 +1,4 @@
 import React from 'react';
-// import './App.scss';
 import MainRoutes from './mainRoutes';
 import { Link } from 'react-router-dom';
  

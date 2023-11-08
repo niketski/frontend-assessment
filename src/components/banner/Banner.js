@@ -1,15 +1,15 @@
 import React from 'react';
-// import './Banner.scss';
 
 // reused components
 import ImageCanvas from '../imageCanvas/ImageCanvas';
 
 const Banner = props => {
+
     const { 
         imageUrlDesktop,
         imageUrlMobile,
         imageAlt, 
-        width = 1629,
+        width = 1629, 
         height = 550,
         className, 
         title,
