@@ -32,12 +32,12 @@
         color: #fff;
 
         h1 {
-            
+            font-weight: 600;
         }
 
         p {
-
-            font-size: 1.5rem;
+            letter-spacing: .05em;
+            font-size: 1.3rem;
             font-weight: 400;
 
             @media (min-width: 992px) {
