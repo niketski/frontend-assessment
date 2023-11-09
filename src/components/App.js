@@ -1,8 +1,17 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import MainRoutes from './mainRoutes';
-import { Link } from 'react-router-dom';
+import AOS from 'aos';
  
 const App = () => {
+
+    useEffect(() => {
+
+        AOS.init({
+            once: true,
+            duration: 1500
+        });
+
+    }, []);
 
     return (
         <React.Fragment>

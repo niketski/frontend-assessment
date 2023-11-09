@@ -38,7 +38,11 @@ const CardList = props => {
                             const { imageUrl, textContent, link } = card;
 
                             return (
-                                <div key={index} className="col-md-6 col-lg-4 component-card-list__card-item">
+                                <div key={index} 
+                                    className="col-md-6 col-lg-4 component-card-list__card-item" 
+                                    data-aos="fade-up" 
+                                    data-aos-offset="400" 
+                                    data-aos-delay={(index * 2) + '00'}>
                                     <Card
                                         className="component-card-list__card"
                                         imageUrl={imageUrl}

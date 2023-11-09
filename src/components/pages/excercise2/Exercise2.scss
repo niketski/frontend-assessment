@@ -2,10 +2,18 @@
 
     &__main {
         min-height: 80vh;
+        height: 100vh;
         display: flex;
         align-items: center;
         justify-content: center;
         padding: 100px 0;
+        position: relative;
+
+        @include media-breakpoint-down(lg)  {
+            height: auto;
+            min-height: 100vh;
+            padding-top: 200px;
+        }
     }
 
 }

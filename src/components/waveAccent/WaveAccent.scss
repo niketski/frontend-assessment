@@ -1,0 +1,15 @@
+.component-wave-accent {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    
+    svg {
+        position: relative;
+        display: block;
+        width: calc(119% + 1.3px);
+        height: 353px;
+    }
+}
+

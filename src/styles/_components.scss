@@ -7,11 +7,13 @@
 @import "../components/button/Button.scss";
 @import "../components/card/Card.scss";
 @import "../components/imageCanvas/ImageCanvas.scss";
-@import "../components/containers/tabs/Tab.scss";
+@import "../components/waveAccent/WaveAccent.scss";
+
 
 /*
     Containers
 */ 
+@import "../components/containers/tabs/Tab.scss";
 @import "../components/containers/CardList/CardList.scss";
 
 

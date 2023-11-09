@@ -25,7 +25,7 @@ const Tabs = props => {
     }
 
     return (
-        <div className="component-tabs">
+        <div className="component-tabs" data-aos="fade-up">
             <div className="component-tabs__panel d-none d-sm-none d-lg-block">
                 { 
                     tabData &&
