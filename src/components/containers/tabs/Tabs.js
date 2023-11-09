@@ -33,7 +33,7 @@ const Tabs = props => {
         const isDesktopView = innerWidth >= mobileBreakpoint;
         const hasNoActiveTab = activeTab == null && currentActiveTab == null;
 
-        // open the first tab if there's no active tab on rezie from mobile to desktop
+        // open the first tab if there's no active tab on resize from mobile to desktop
         if(isDesktopView && hasNoActiveTab) {
 
             setActiveTab(0);
