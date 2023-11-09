@@ -41,8 +41,6 @@ const Banner = props => {
 
     }
 
-    console.log(isDoneTyping);
-
     return (
         <div className="component-banner">
 

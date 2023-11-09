@@ -1,10 +1,15 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import DOMPurify from 'dompurify';
+import { debounce } from '../../../utilities';
+
+console.log(debounce);
 
 const Tabs = props => {
     const { tabData } = props;
     const [activeTab, setActiveTab] = useState(0);
     const [currentActiveTab, setCurrentActivetab] = useState(0);
+    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+    let mobileBreakpoint = 991;
 
     const handleTabButtonClick = (index, isMobileButton = false) => {
 
@@ -23,6 +28,38 @@ const Tabs = props => {
 
         return;
     }
+
+    const handleResize = debounce((activeTab, currentActiveTab) => {
+
+        const { innerWidth } = window;
+        const isDesktopView = innerWidth >= mobileBreakpoint;
+        const hasNoActiveTab = activeTab == null && currentActiveTab == null;
+
+        // open the first tab if there's no active tab on rezie from mobile to desktop
+        if(isDesktopView && hasNoActiveTab) {
+
+            setActiveTab(0);
+            setCurrentActivetab(0);
+
+        }
+
+       setWindowWidth(innerWidth);
+        
+    }, 100);
+
+    useEffect(() => {
+
+        window.addEventListener('resize', () => { handleResize(activeTab, currentActiveTab) });
+
+        
+        // Clean up the event listener when the component unmounts
+        return () => {
+
+            window.removeEventListener('resize', () => { handleResize(activeTab, currentActiveTab) });
+
+        };
+
+    }, [windowWidth]);
 
     return (
         <div className="component-tabs" data-aos="fade-up">
