@@ -2,8 +2,6 @@ import React, { useEffect, useState } from 'react';
 import DOMPurify from 'dompurify';
 import { debounce } from '../../../utilities';
 
-console.log(debounce);
-
 const Tabs = props => {
     const { tabData } = props;
     const [activeTab, setActiveTab] = useState(0);
