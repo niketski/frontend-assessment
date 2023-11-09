@@ -1,40 +1,39 @@
-Introduction
+# Front End Assessment
 ---
-Thanks for taking the time to complete this frontend technical assessment. We will be focusing on software quality (scalability, readability, maintainability, etc.) and your eye for detail. You may include any libraries, but Vue.js is preferred and jQuery is not recommended. Along with following best practices, bonus points for following our [coding guidelines](https://github.com/mindarc/frontend-assessment/wiki/Coding-guidelines). 
+This app is exclusive for my Front End Assessment, this is to test my skill when it comes to software quality.This app contains Exercise 1 and Exercise 2, the Exercise 1 is a responsive page that contains Banner and 3 CTA. Exercise 2 is a page where there's a responsive tab that turns into accordion on mobile.
 
-Exercise 1
+This app is built using HTML,CSS,JS, Bootstrap and ReactJs. I also used a Javascript module bundler which is Webpack to be able to use the new Javascript syntax and organize my code into a separate files, then bundle the modules together into a single file.
+
+# To install and run the app.
 ---
-Build a responsive page based on the designs.
+1. Make sure the you have NodeJs and Git installed on your pc.
+2. Clone the project by typing `git glone https://github.com/niketski/frontend-assessment.git`.
+3. Go the the root direactory of the project.
+4. Once you have successfully cloned the project, on your terminal type, `npm install`.
+5. After the installation of all the dependencies, you can now run the app by typing `npm run start`.
 
-##### Requirements
-1. Match the designs exactly.
-2. Needs to be responsive.
+# Project Structure
 
-##### Designs
-* exercise1-desktop.png
-* exercise1-mobile.png
-
-##### Assets
-* Desktop banner - https://via.placeholder.com/1920x650
-* Mobile banner - https://via.placeholder.com/600x600
-* Content images - https://via.placeholder.com/400x300
-
-Exercise 2
----
-Read the `data.json` file and display the data as tabs on desktop and an accordion on mobile.
-
-##### Requirements
-1. Display data in tabs on desktop.
-2. Display data in an accordion on mobile.
-3. Only 1 accordion/tab should be open at a time.
-4. Open the first accordion/tab on load.
-5. If the open accordion is selected, close it.
-
-###### Bonus points
-* Improve the user experience with meaningful animations/transitions.
-* Design and styling.
-* Explain why the result of `('b' + 'a' + + 'a' + 'a').toLowerCase()` is `banana`.
-
-Submission
----
-We recommend submitting your completed assessment as a forked repository. Please replace README content with instructions and relevant documentation.
+```jsx
+project-root/ **`project-root/`:** The main directory of the project
+|-- src/
+|   |-- components/ **`components/`:** This includes all the global components
+|   |   |-- component/ **`component/`:** Global component
+|   |   |-- |-- Component.js
+|   |   |-- |-- Component.scss
+|   |   |-- pages/ **`pages/`:** This folder includes all the pages
+|   |   |-- |-- Page.js
+|   |   |-- |-- Page.scss
+|   |   |-- containers/ **`containers/`:** This includes all the components that has their own state
+|   |   |-- |-- Container.js
+|   |   |-- |-- Container.scss
+|   |   |-- |-- App.js **`App.js`:** The App.js file includes the MainRoutes component which contains all the routes of the app also it includes the initialization of AOS.js library.
+|   |   |-- |-- App.scss
+|   |   |-- |-- MainRoutes.js **`MainRoutes.js`:** This file includes all the imported page components and routes of the app.
+|   |-- images/ **`images/`:** This includes all the image files like .jpg, .png and etc.
+|   |-- styles/ **`styles/`:** This folder includes all import of the files came from the components folder.
+|   |-- | -- vendor/ **`vendor/`:** This includes all of the other library styles.
+|   |-- utilities.js **`utilities.js`:** This file inlcudes all the js helper functions.
+|-- package.json
+|-- README.md
+|-- webpack.config.js **`webpack.config.js`:** This file inlcudes the entry point, output file, rules and devServer options.
