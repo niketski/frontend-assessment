@@ -6,6 +6,7 @@ const App = () => {
 
     useEffect(() => {
 
+        // initialize AOS for entrance animations
         AOS.init({
             once: true,
             duration: 1500
