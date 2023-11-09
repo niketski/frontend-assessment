@@ -1,11 +1,12 @@
 .page-exercise-1 {
-    
+    overflow: hidden;
+
     &__section-cards {
         padding: 20px 0;
         position: relative;
     
         &__cards-wrapper {
-    
+
             @include media-breakpoint-up(xl) {
                 padding: 0 110px;
             }

@@ -1,0 +1,51 @@
+.page-home {
+    min-height: 80vh;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+    @include media-breakpoint-down(lg)  {
+        height: auto;
+        min-height: 100vh;
+    }
+
+    &__main-section {
+        padding: 100px 0;
+        position: relative;
+        width: 100%;
+        
+    }
+
+        &__title {
+            span {
+                display: inline-block;
+                position: relative;
+                padding-bottom: 10px;
+
+                &::after {
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    right: 0;
+                    bottom: -5px;
+                    width: 40%;
+                    height: 15px;
+                    background-color: $accentColor;
+                    border-radius: 20px;
+                    z-index: -1;
+                }
+            }
+        }
+
+        &__cta_item:first-child {
+
+            @include media-breakpoint-down(lg) { 
+                margin-bottom: 50px;
+             }
+
+        }
+
+
+}
