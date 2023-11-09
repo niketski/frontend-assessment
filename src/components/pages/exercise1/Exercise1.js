@@ -20,7 +20,8 @@ const Exercise1 = () => {
                     imageUrlMobile={bannerImageMobile}
                     imageAlt="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
                     title="Hello Developer!"
-                    subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit"/>
+                    subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+                    isTypeWriterEffectEnabled={true}/>
             </section>
 
             <section className="page-exercise-1__section-cards">
